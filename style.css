@@ -1,47 +1,36 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    padding: 0px  0px 200px 0px;
+    ---animation-duration: 5s;
+    text-shadow: 10px 5px 7px #1d1c36 ;
+}
+
 .container {
     width: 600px;
     margin: 0 auto;
-    padding: 30px;
+    padding: -100px;
 }
+
 .myphoto {
-    width: 120px;
-    border-radius: 9999px;
+    padding: 100px ;
+    width: 250px ;
+    border-radius: 99999px;
 }
-    
+
 .photo {
+    padding: -100px 0px 100px 0px ;
     text-align: center;
-    animation-duration: 1s;
 }
+
 .name {
     text-align: center;
 }
-h1 {
-    font-family: 'Times New Roman', Times, serif;
-    color: #3a47ad;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 20px;
 
-}
-.info {
-    color: #3a47ad;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    line-height: 1.6;
-    padding: 200px;
-    font-weight: 200px;
-}
-
-h2 {
-    padding: 100px;
-    font-family: 'Times New Roman', Times, serif;
-    color: #3a47ad;
-    font-size: 40px;
-    text-align: center;
-    text-shadow: 20px;
-}
 .inpt {
-    color: #3a47ad;
+    color: #2b3474;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     line-height: 1.6;
@@ -50,92 +39,26 @@ h2 {
 
 .icon {
     position: absolute;
-    top: 10px;
-    left: 20px;
-    width: 60px;
+    top: 80px;
+    left: 78px;
+    width: 30px;
 }
-.top {
-    display: block;
-    /* 變區塊 */
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    /* 變圓形 */
-    background-color: rgb(221, 234, 255);
-    text-align: center;
-    padding-top: 16px;
-    box-sizing: border-box;
-    /* 把padding、border的尺寸含入高度、寬度內 */
-}
-.works {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 200px;
-}
-.work-item img {
-    max-width: 98%;
-    filter: grayscale(0%);
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-.work-item:hover img {
-    transform: scale(1.5);
-    filter: blur(8px);
-}
-.work-item {
+
+.button {
     position: relative;
-    line-height: 20px;
-    overflow: hidden;
-}
-.work-title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
+    display: inline-flex;
+    border: 1px solid #3a47ad;
+    padding: 50px;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 24px;
+    margin: 80px 50px 30px 60px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    opacity: 0;
-    transition: all .5s;
-}
-.work-item:hover .work-title {
-    opacity: 1;
-}
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: #6c7bdf;
-}
-
-@keyframes move {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(100px);
-    }
-}
-
-body, html {
-    height: 100%;
-}
-
-body {
-    background-image: url(photo9.jpg);
-    height: 50%;
-    background-color: #ffffff;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 50px;
+    color: #3a47ad;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    ---animation-duration: 5s;
 }
 
 .topnav {
@@ -162,60 +85,42 @@ body {
     color: white;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-.column {
-    flex: 25%;
-    max-width: 50%;
-    padding: 0 4px;
-    position: relative;
-    line-height: 0;
-    overflow: hidden;
-}
-
-.column title {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
+.top {
+    display: block;
+    /* 變區塊 */
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* 變圓形 */
+    background-color: rgb(221, 234, 255);
     text-align: center;
-    color: aliceblue;
-    font-size: 24px;
-    font-family: sans-serif;
-    font-weight: bold;
-    opacity: 0;
-    transition: all .5s;
+    padding-top: 16px;
+    box-sizing: border-box;
+    /* 把padding、border的尺寸含入高度、寬度內 */
+}
+body, html {
+    height: 50%;
+  }
+
+  body {
+    background-image: url(photo13.jpg);
+    height: 50%;
+    background-color: #ffffff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    max-width: 100%;
-    filter: grayscale(80%);
-    height: auto;
-    aspect-ratio: 1;
-    object-fit: cover;
-    transition-property: all;
-    transition-duration: .5s;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-}
-
-.column :hover img {
-    transform: scale(1.5);
-    filter: none;
-}
+div.scroll-container {
+    background-color: #ffffff;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
